@@ -64,7 +64,7 @@ namespace PyxisAir
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             DialogResult dialogResult;
-            dialogResult = MessageBox.Show(this, "Are you sure? ", "Exit", MessageBoxButtons.OKCancel);
+            dialogResult = MessageBox.Show(this, "Are you sure? ", "Quit", MessageBoxButtons.OKCancel);
             if (dialogResult == DialogResult.Cancel)
                 e.Cancel = true;
         }
@@ -72,6 +72,11 @@ namespace PyxisAir
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            PlaneListBox.Items.Clear();
         }
     }
 }

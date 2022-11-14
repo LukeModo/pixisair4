@@ -32,6 +32,7 @@
             this.PlaneListBox = new System.Windows.Forms.ListBox();
             this.btnMaint = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnPlanes
@@ -72,11 +73,22 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(82, 83);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(75, 23);
+            this.btnClear.TabIndex = 4;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnMaint);
             this.Controls.Add(this.PlaneListBox);
@@ -95,6 +107,7 @@
         private System.Windows.Forms.ListBox PlaneListBox;
         private System.Windows.Forms.Button btnMaint;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnClear;
     }
 }
 
