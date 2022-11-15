@@ -34,6 +34,8 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnPlanesDB2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnPlanes
@@ -96,11 +98,33 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "You can access all other forms from here";
             // 
+            // btnPlanesDB2
+            // 
+            this.btnPlanesDB2.Location = new System.Drawing.Point(78, 124);
+            this.btnPlanesDB2.Name = "btnPlanesDB2";
+            this.btnPlanesDB2.Size = new System.Drawing.Size(118, 52);
+            this.btnPlanesDB2.TabIndex = 6;
+            this.btnPlanesDB2.Text = "Planes DB2";
+            this.btnPlanesDB2.UseVisualStyleBackColor = true;
+            this.btnPlanesDB2.Click += new System.EventHandler(this.btnPlanesDB2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(214, 124);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(118, 52);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Maintenance DB2";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnPlanesDB2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnExit);
@@ -124,5 +148,7 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnPlanesDB2;
+        private System.Windows.Forms.Button button1;
     }
 }

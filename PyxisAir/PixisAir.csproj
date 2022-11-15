@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="IBM.Data.DB2.iSeries, Version=12.0.0.0, Culture=neutral, PublicKeyToken=9cdb2ebfb1f93a26, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\IBM\Client Access\IBM.Data.DB2.iSeries.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -64,6 +68,12 @@
     <Compile Include="Maintenance.Designer.cs">
       <DependentUpon>Maintenance.cs</DependentUpon>
     </Compile>
+    <Compile Include="MaintenanceDB2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintenanceDB2.Designer.cs">
+      <DependentUpon>MaintenanceDB2.cs</DependentUpon>
+    </Compile>
     <Compile Include="PixisAirDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -79,6 +89,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PixisAirDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="PlanesDB2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlanesDB2.Designer.cs">
+      <DependentUpon>PlanesDB2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -89,6 +105,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Maintenance.resx">
       <DependentUpon>Maintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintenanceDB2.resx">
+      <DependentUpon>MaintenanceDB2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanesDB2.resx">
+      <DependentUpon>PlanesDB2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -54,5 +54,19 @@ namespace PyxisAir
             if (dialogResult == DialogResult.Cancel)
                 e.Cancel = true;
         }
+
+        private void btnPlanesDB2_Click(object sender, EventArgs e)
+        {
+            PlanesDB2 planesDB = new PlanesDB2();
+            planesDB.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MaintenanceDB2 maint = new MaintenanceDB2();
+            maint.Show();
+            this.Hide();
+        }
     }
 }
