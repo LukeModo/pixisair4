@@ -78,5 +78,22 @@ namespace PyxisAir
         {
             PlaneListBox.Items.Clear();
         }
+
+        private void mainFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MainForm mf = new MainForm();
+            mf.Show();
+            this.Hide();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void clearToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PlaneListBox.Items.Clear();
+        }
     }
 }

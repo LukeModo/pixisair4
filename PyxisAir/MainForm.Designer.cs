@@ -36,6 +36,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnPlanesDB2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.displayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.planesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.planesDB2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.maintenanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.maintenanceDB2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnPlanes
@@ -118,6 +127,71 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.TabIndex = 8;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.displayToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // displayToolStripMenuItem
+            // 
+            this.displayToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.planesToolStripMenuItem,
+            this.planesDB2ToolStripMenuItem,
+            this.maintenanceToolStripMenuItem,
+            this.maintenanceDB2ToolStripMenuItem});
+            this.displayToolStripMenuItem.Name = "displayToolStripMenuItem";
+            this.displayToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.displayToolStripMenuItem.Text = "Display";
+            // 
+            // planesToolStripMenuItem
+            // 
+            this.planesToolStripMenuItem.Name = "planesToolStripMenuItem";
+            this.planesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.planesToolStripMenuItem.Text = "Planes";
+            this.planesToolStripMenuItem.Click += new System.EventHandler(this.planesToolStripMenuItem_Click);
+            // 
+            // planesDB2ToolStripMenuItem
+            // 
+            this.planesDB2ToolStripMenuItem.Name = "planesDB2ToolStripMenuItem";
+            this.planesDB2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.planesDB2ToolStripMenuItem.Text = "PlanesDB2";
+            this.planesDB2ToolStripMenuItem.Click += new System.EventHandler(this.planesDB2ToolStripMenuItem_Click);
+            // 
+            // maintenanceToolStripMenuItem
+            // 
+            this.maintenanceToolStripMenuItem.Name = "maintenanceToolStripMenuItem";
+            this.maintenanceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.maintenanceToolStripMenuItem.Text = "Maintenance";
+            this.maintenanceToolStripMenuItem.Click += new System.EventHandler(this.maintenanceToolStripMenuItem_Click);
+            // 
+            // maintenanceDB2ToolStripMenuItem
+            // 
+            this.maintenanceDB2ToolStripMenuItem.Name = "maintenanceDB2ToolStripMenuItem";
+            this.maintenanceDB2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.maintenanceDB2ToolStripMenuItem.Text = "Maintenance DB2";
+            this.maintenanceDB2ToolStripMenuItem.Click += new System.EventHandler(this.maintenanceDB2ToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -131,10 +205,14 @@
             this.Controls.Add(this.btnMaint);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnPlanes);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,5 +228,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnPlanesDB2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem displayToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem planesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem planesDB2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem maintenanceToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem maintenanceDB2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }

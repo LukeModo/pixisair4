@@ -45,5 +45,37 @@ namespace PyxisAir
                 planeNoTextBox.Text = ex.Message;
             }
         }
+
+        private void btnMain_Click(object sender, EventArgs e)
+        {
+            MainForm main = new MainForm();
+            main.Show();
+            this.Hide();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void MaintenanceDB2_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dialogResult;
+            dialogResult = MessageBox.Show(this, "Are you sure? ", "Exit", MessageBoxButtons.OKCancel);
+            if (dialogResult == DialogResult.Cancel)
+                e.Cancel = true;
+        }
+
+        private void mainFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MainForm main = new MainForm();
+            main.Show();
+            this.Hide();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
