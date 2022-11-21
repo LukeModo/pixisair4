@@ -127,5 +127,12 @@ namespace PyxisAir
             maint.Show();
             this.Hide();
         }
+
+        private void planeNoAirportDB2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PlaneNoAndAirportDB2_JN planeNoAndAirportDB2 = new PlaneNoAndAirportDB2_JN();
+            planeNoAndAirportDB2.Show();
+            this.Hide();
+        }
     }
 }

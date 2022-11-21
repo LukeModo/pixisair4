@@ -201,6 +201,7 @@
             this.PlaneNoAirportDB2Button.TabIndex = 9;
             this.PlaneNoAirportDB2Button.Text = "Plane Number and Airport DB2 (JN)";
             this.PlaneNoAirportDB2Button.UseVisualStyleBackColor = true;
+            this.PlaneNoAirportDB2Button.Click += new System.EventHandler(this.PlaneNoAirportDB2Button_Click);
             // 
             // MainForm
             // 

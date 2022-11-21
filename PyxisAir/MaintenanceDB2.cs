@@ -77,5 +77,10 @@ namespace PyxisAir
         {
             this.Close();
         }
+
+        private void MaintenanceDB2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

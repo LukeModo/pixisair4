@@ -130,20 +130,20 @@
             this.displayToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mainFormToolStripMenuItem});
             this.displayToolStripMenuItem.Name = "displayToolStripMenuItem";
-            this.displayToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.displayToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.displayToolStripMenuItem.Text = "Display";
             // 
             // mainFormToolStripMenuItem
             // 
             this.mainFormToolStripMenuItem.Name = "mainFormToolStripMenuItem";
-            this.mainFormToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mainFormToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.mainFormToolStripMenuItem.Text = "Main Form";
             this.mainFormToolStripMenuItem.Click += new System.EventHandler(this.mainFormToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -164,6 +164,7 @@
             this.Name = "MaintenanceDB2";
             this.Text = "MaintenanceDB2";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MaintenanceDB2_FormClosing);
+            this.Load += new System.EventHandler(this.MaintenanceDB2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

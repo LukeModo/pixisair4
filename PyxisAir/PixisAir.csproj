@@ -121,6 +121,9 @@
     <EmbeddedResource Include="MaintenanceDB2.resx">
       <DependentUpon>MaintenanceDB2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PlaneNoAndAirportDB2_JN.resx">
+      <DependentUpon>PlaneNoAndAirportDB2_JN.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PlaneNoAndAirportSQL_JN.resx">
       <DependentUpon>PlaneNoAndAirportSQL_JN.cs</DependentUpon>
     </EmbeddedResource>

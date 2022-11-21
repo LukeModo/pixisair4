@@ -103,5 +103,12 @@ namespace PyxisAir
         {
             Application.Exit();
         }
+
+        private void PlaneNoAirportDB2Button_Click(object sender, EventArgs e)
+        {
+            PlaneNoAndAirportDB2_JN planeNoAndAirportDB2 = new PlaneNoAndAirportDB2_JN();
+            planeNoAndAirportDB2.Show();
+            this.Hide();
+        }
     }
 }
