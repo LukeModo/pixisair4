@@ -44,6 +44,7 @@
             this.maintenanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.maintenanceDB2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.PlaneNoAirportDB2Button = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -192,11 +193,21 @@
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
+            // PlaneNoAirportDB2Button
+            // 
+            this.PlaneNoAirportDB2Button.Location = new System.Drawing.Point(347, 124);
+            this.PlaneNoAirportDB2Button.Name = "PlaneNoAirportDB2Button";
+            this.PlaneNoAirportDB2Button.Size = new System.Drawing.Size(118, 52);
+            this.PlaneNoAirportDB2Button.TabIndex = 9;
+            this.PlaneNoAirportDB2Button.Text = "Plane Number and Airport DB2 (JN)";
+            this.PlaneNoAirportDB2Button.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.PlaneNoAirportDB2Button);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnPlanesDB2);
             this.Controls.Add(this.label2);
@@ -236,5 +247,6 @@
         private System.Windows.Forms.ToolStripMenuItem maintenanceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem maintenanceDB2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.Button PlaneNoAirportDB2Button;
     }
 }

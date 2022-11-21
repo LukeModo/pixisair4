@@ -86,5 +86,46 @@ namespace PyxisAir
             //this.Hide();
             this.Close();
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void closeReturnToMainFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MainForm mf = new MainForm();
+            mf.Show();
+            //this.Hide();
+            this.Close();
+        }
+
+        private void planesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.Show();
+            this.Hide();
+        }
+
+        private void planesDB2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PlanesDB2 planesDB = new PlanesDB2();
+            planesDB.Show();
+            this.Hide();
+        }
+
+        private void maintenanceLogsSQLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Maintenance maint = new Maintenance();
+            maint.Show();
+            this.Hide();
+        }
+
+        private void maintenanceLogsDB2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MaintenanceDB2 maint = new MaintenanceDB2();
+            maint.Show();
+            this.Hide();
+        }
     }
 }

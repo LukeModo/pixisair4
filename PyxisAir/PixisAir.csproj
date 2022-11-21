@@ -89,6 +89,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PixisAirDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="PlaneNoAndAirportDB2_JN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlaneNoAndAirportDB2_JN.Designer.cs">
+      <DependentUpon>PlaneNoAndAirportDB2_JN.cs</DependentUpon>
+    </Compile>
     <Compile Include="PlaneNoAndAirportSQL_JN.cs">
       <SubType>Form</SubType>
     </Compile>
