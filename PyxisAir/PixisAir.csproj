@@ -89,6 +89,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PixisAirDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="PlaneNoAndAirportSQL_JN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlaneNoAndAirportSQL_JN.Designer.cs">
+      <DependentUpon>PlaneNoAndAirportSQL_JN.cs</DependentUpon>
+    </Compile>
     <Compile Include="PlanesDB2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MaintenanceDB2.resx">
       <DependentUpon>MaintenanceDB2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlaneNoAndAirportSQL_JN.resx">
+      <DependentUpon>PlaneNoAndAirportSQL_JN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PlanesDB2.resx">
       <DependentUpon>PlanesDB2.cs</DependentUpon>

@@ -44,7 +44,9 @@ namespace PyxisAir
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            PlaneNoAndAirportSQL_JN planeNoAndAirportSQL = new PlaneNoAndAirportSQL_JN();
+            planeNoAndAirportSQL.Show();
+            this.Hide();
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
