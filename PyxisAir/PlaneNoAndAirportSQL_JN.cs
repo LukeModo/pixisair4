@@ -47,7 +47,7 @@ namespace PyxisAir
 
             //set SQL statement for this button
             //We need PlaneNo and APARCD from dbo.Airplane
-            //Where PersonType = input text in textbox only
+            //Where PlaneNo = input text in textbox only
             SQL = "SELECT PlaneNo,APARCD FROM dbo.Airplane WHERE PlaneNo='" +
                     txtPlaneNo.Text + "' ";
 

@@ -1,8 +1,8 @@
-﻿using System;
+﻿using IBM.Data.DB2.iSeries;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -11,60 +11,41 @@ using System.Windows.Forms;
 
 namespace PyxisAir
 {
-    public partial class AllMaintenanceLogsSQL_JN : Form
+    public partial class AllMaintenanceLogsDB2_JN : Form
     {
-        //declare class level variables
         private BindingSource bindingSource = new BindingSource();
-        SqlConnection connection;
-        string connectionString;
-        string SQL;
-        SqlDataAdapter dataAdapter;
-        DataSet dataSet;
+        iDB2Connection conn;
+        iDB2DataAdapter adapter;
+        DataSet dataset;
 
-        public AllMaintenanceLogsSQL_JN()
+        public AllMaintenanceLogsDB2_JN()
         {
             InitializeComponent();
         }
 
-        private void AllMaintenanceLogsSQL_JN_Load(object sender, EventArgs e)
+        private void AllMaintenanceLogsDB2_JN_Load(object sender, EventArgs e)
         {
-            //Set connection string in the load, since we will use it for all of the buttons
-            connectionString = "Data Source=V2STUDENTPOC;Initial Catalog=PixisAir;" +
-                "User ID=Student;Password=ichooseGateway";
 
-            //set SQL statement (we will replace this in each button)
-            SQL = "Select * FROM dbo.MaintLog";
-
-            //set and instantiate connection, dataAdapter, and dataSet
-            connection = new SqlConnection(connectionString);
-            dataAdapter = new SqlDataAdapter(SQL, connection);
-            dataSet = new DataSet();
         }
 
-        private void SeeMaintLogsButton_Click(object sender, EventArgs e)
+        private void SeeAllMaintLogsButton_Click(object sender, EventArgs e)
         {
-            //reset dataSet
-            dataSet = new DataSet();
-
-            //set SQL statement for this button
-            //We need all fields and records from dbo.MaintLog
-            SQL = "SELECT * FROM dbo.MaintLog ";
-
-            //use try/catch block for error handling
+            string sql;
             try
             {
-                connection.Open(); //open connection
+                conn = new iDB2Connection("DataSource=deathstar.gtc.edu");
+                sql = "SELECT * FROM MAINTLOG";
 
                 dataGridView1.DataSource = bindingSource;
-                dataAdapter = new SqlDataAdapter(SQL, connection);
+                adapter = new iDB2DataAdapter(sql, conn);
 
-                SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(dataAdapter);
+                iDB2CommandBuilder commandBuilder = new iDB2CommandBuilder(adapter);
                 DataTable table = new DataTable();
 
-                dataAdapter.Fill(table);
+                adapter.Fill(table);
                 bindingSource.DataSource = table;
 
-                connection.Close(); //close connection
+                conn.Close();
             }
             catch (Exception ex)
             {
@@ -81,6 +62,7 @@ namespace PyxisAir
         {
             MainForm mf = new MainForm();
             mf.Show();
+            //this.Hide();
             this.Close();
         }
 
@@ -93,7 +75,13 @@ namespace PyxisAir
         {
             MainForm mf = new MainForm();
             mf.Show();
+            //this.Hide();
             this.Close();
+        }
+
+        private void displayToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void planesSQLToolStripMenuItem_Click(object sender, EventArgs e)
@@ -138,10 +126,10 @@ namespace PyxisAir
             this.Hide();
         }
 
-        private void displayAllMaintenanceLogsDB2ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void displayAllMaintenanceLogsSQLToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AllMaintenanceLogsDB2_JN allMaintDB2 = new AllMaintenanceLogsDB2_JN();
-            allMaintDB2.Show();
+            AllMaintenanceLogsSQL_JN allMaintSQL = new AllMaintenanceLogsSQL_JN();
+            allMaintSQL.Show();
             this.Hide();
         }
     }

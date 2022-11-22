@@ -46,6 +46,7 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PlaneNoAirportDB2Button = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.AllMaintLogsDB2Button = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -214,11 +215,22 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
+            // AllMaintLogsDB2Button
+            // 
+            this.AllMaintLogsDB2Button.Location = new System.Drawing.Point(483, 124);
+            this.AllMaintLogsDB2Button.Name = "AllMaintLogsDB2Button";
+            this.AllMaintLogsDB2Button.Size = new System.Drawing.Size(118, 52);
+            this.AllMaintLogsDB2Button.TabIndex = 11;
+            this.AllMaintLogsDB2Button.Text = "Display All Maintenance Logs DB2 (JN)";
+            this.AllMaintLogsDB2Button.UseVisualStyleBackColor = true;
+            this.AllMaintLogsDB2Button.Click += new System.EventHandler(this.AllMaintLogsDB2Button_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.AllMaintLogsDB2Button);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.PlaneNoAirportDB2Button);
             this.Controls.Add(this.button1);
@@ -262,5 +274,6 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.Button PlaneNoAirportDB2Button;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button AllMaintLogsDB2Button;
     }
 }

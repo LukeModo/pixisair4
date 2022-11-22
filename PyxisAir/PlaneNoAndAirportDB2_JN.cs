@@ -44,14 +44,9 @@ namespace PyxisAir
                 iDB2CommandBuilder commandBuilder = new iDB2CommandBuilder(adapter);
                 DataTable table = new DataTable();
 
-                //dataset = new DataSet();
                 adapter.Fill(table);
                 bindingSource.DataSource = table;
 
-                //listBox1.Items.Clear();
-                //foreach (DataRow pRow in dataset.Tables[0].Rows)
-
-                //txtAirport.Text = pRow[0].ToString();
                 conn.Close();
             }
             catch (Exception ex)

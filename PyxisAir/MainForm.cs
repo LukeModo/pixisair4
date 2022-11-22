@@ -117,5 +117,12 @@ namespace PyxisAir
             allMaintSQL.Show();
             this.Hide();
         }
+
+        private void AllMaintLogsDB2Button_Click(object sender, EventArgs e)
+        {
+            AllMaintenanceLogsDB2_JN allMaintDB2 = new AllMaintenanceLogsDB2_JN();
+            allMaintDB2.Show();
+            this.Hide();
+        }
     }
 }

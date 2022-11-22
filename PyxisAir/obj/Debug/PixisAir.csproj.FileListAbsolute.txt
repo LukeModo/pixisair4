@@ -62,3 +62,4 @@ C:\Users\1284396\Source\Repos\pixisairteam4\PyxisAir\obj\Debug\PyxisAir.exe
 C:\Users\1284396\Source\Repos\pixisairteam4\PyxisAir\obj\Debug\PyxisAir.pdb
 C:\Users\1284396\Source\Repos\pixisairteam4\PyxisAir\obj\Debug\PyxisAir.AllMaintenanceLogsSQL_JN.resources
 C:\Users\1284396\Source\Repos\pixisairteam4\PyxisAir\obj\Debug\PyxisAir.PlaneNoAndAirportDB2_JN.resources
+C:\Users\1284396\Source\Repos\pixisairteam4\PyxisAir\obj\Debug\PyxisAir.AllMaintenanceLogsDB2_JN.resources
