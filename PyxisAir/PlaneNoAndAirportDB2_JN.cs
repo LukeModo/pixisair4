@@ -38,7 +38,7 @@ namespace PyxisAir
                 sql = "SELECT APARCD FROM AIRPLANE WHERE PlaneNo = '" +
                     txtPlaneNo.Text + "' ";
 
-                lstDisplay.DataSource = bindingSource;
+                dataGridView1.DataSource = bindingSource;
                 adapter = new iDB2DataAdapter(sql, conn);
 
                 iDB2CommandBuilder commandBuilder = new iDB2CommandBuilder(adapter);
@@ -56,14 +56,14 @@ namespace PyxisAir
             }
             catch (Exception ex)
             {
-                lstDisplay.Items.Add(ex.Message);
+                txtError.Text = ex.Message;
             }
         }
 
         private void ClearButton_Click(object sender, EventArgs e)
         {
             txtPlaneNo.Text = "";
-            lstDisplay.Items.Clear();
+            txtError.Text = "";
         }
 
         private void ReturnToMainButton_Click(object sender, EventArgs e)

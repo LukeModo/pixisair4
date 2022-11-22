@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lstDisplay = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtPlaneNo = new System.Windows.Forms.TextBox();
             this.SeeAirportButton = new System.Windows.Forms.Button();
@@ -37,8 +36,6 @@
             this.exitProgramToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeReturnToMainFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.displayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ClearButton = new System.Windows.Forms.Button();
-            this.ReturnToMainButton = new System.Windows.Forms.Button();
             this.planesSQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.planesDB2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.maintenanceSQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,16 +43,13 @@
             this.planeNoAirportSQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.displayAllMaintenanceLogsSQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.displayAllMaintenanceLogsDB2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ClearButton = new System.Windows.Forms.Button();
+            this.ReturnToMainButton = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtError = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lstDisplay
-            // 
-            this.lstDisplay.FormattingEnabled = true;
-            this.lstDisplay.Location = new System.Drawing.Point(255, 67);
-            this.lstDisplay.Name = "lstDisplay";
-            this.lstDisplay.Size = new System.Drawing.Size(310, 342);
-            this.lstDisplay.TabIndex = 0;
             // 
             // label1
             // 
@@ -133,60 +127,38 @@
             this.displayToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
             this.displayToolStripMenuItem.Text = "Display";
             // 
-            // ClearButton
-            // 
-            this.ClearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClearButton.Location = new System.Drawing.Point(604, 250);
-            this.ClearButton.Name = "ClearButton";
-            this.ClearButton.Size = new System.Drawing.Size(173, 45);
-            this.ClearButton.TabIndex = 5;
-            this.ClearButton.Text = "&Clear";
-            this.ClearButton.UseVisualStyleBackColor = true;
-            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
-            // 
-            // ReturnToMainButton
-            // 
-            this.ReturnToMainButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReturnToMainButton.Location = new System.Drawing.Point(604, 364);
-            this.ReturnToMainButton.Name = "ReturnToMainButton";
-            this.ReturnToMainButton.Size = new System.Drawing.Size(173, 45);
-            this.ReturnToMainButton.TabIndex = 6;
-            this.ReturnToMainButton.Text = "Return to Main Form";
-            this.ReturnToMainButton.UseVisualStyleBackColor = true;
-            this.ReturnToMainButton.Click += new System.EventHandler(this.ReturnToMainButton_Click);
-            // 
             // planesSQLToolStripMenuItem
             // 
             this.planesSQLToolStripMenuItem.Name = "planesSQLToolStripMenuItem";
-            this.planesSQLToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.planesSQLToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.planesSQLToolStripMenuItem.Text = "Planes SQL";
             this.planesSQLToolStripMenuItem.Click += new System.EventHandler(this.planesSQLToolStripMenuItem_Click);
             // 
             // planesDB2ToolStripMenuItem
             // 
             this.planesDB2ToolStripMenuItem.Name = "planesDB2ToolStripMenuItem";
-            this.planesDB2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.planesDB2ToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.planesDB2ToolStripMenuItem.Text = "Planes DB2";
             this.planesDB2ToolStripMenuItem.Click += new System.EventHandler(this.planesDB2ToolStripMenuItem_Click);
             // 
             // maintenanceSQLToolStripMenuItem
             // 
             this.maintenanceSQLToolStripMenuItem.Name = "maintenanceSQLToolStripMenuItem";
-            this.maintenanceSQLToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.maintenanceSQLToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.maintenanceSQLToolStripMenuItem.Text = "Maintenance Logs SQL";
             this.maintenanceSQLToolStripMenuItem.Click += new System.EventHandler(this.maintenanceSQLToolStripMenuItem_Click);
             // 
             // maintenanceLogsDB2ToolStripMenuItem
             // 
             this.maintenanceLogsDB2ToolStripMenuItem.Name = "maintenanceLogsDB2ToolStripMenuItem";
-            this.maintenanceLogsDB2ToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.maintenanceLogsDB2ToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.maintenanceLogsDB2ToolStripMenuItem.Text = "Maintenance Logs DB2";
             this.maintenanceLogsDB2ToolStripMenuItem.Click += new System.EventHandler(this.maintenanceLogsDB2ToolStripMenuItem_Click);
             // 
             // planeNoAirportSQLToolStripMenuItem
             // 
             this.planeNoAirportSQLToolStripMenuItem.Name = "planeNoAirportSQLToolStripMenuItem";
-            this.planeNoAirportSQLToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.planeNoAirportSQLToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.planeNoAirportSQLToolStripMenuItem.Text = "Plane No And Airport SQL";
             this.planeNoAirportSQLToolStripMenuItem.Click += new System.EventHandler(this.planeNoAirportSQLToolStripMenuItem_Click);
             // 
@@ -203,17 +175,56 @@
             this.displayAllMaintenanceLogsDB2ToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.displayAllMaintenanceLogsDB2ToolStripMenuItem.Text = "Display All Maintenance Logs DB2";
             // 
+            // ClearButton
+            // 
+            this.ClearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClearButton.Location = new System.Drawing.Point(604, 250);
+            this.ClearButton.Name = "ClearButton";
+            this.ClearButton.Size = new System.Drawing.Size(173, 45);
+            this.ClearButton.TabIndex = 5;
+            this.ClearButton.Text = "&Clear";
+            this.ClearButton.UseVisualStyleBackColor = true;
+            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
+            // 
+            // ReturnToMainButton
+            // 
+            this.ReturnToMainButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReturnToMainButton.Location = new System.Drawing.Point(604, 349);
+            this.ReturnToMainButton.Name = "ReturnToMainButton";
+            this.ReturnToMainButton.Size = new System.Drawing.Size(173, 45);
+            this.ReturnToMainButton.TabIndex = 6;
+            this.ReturnToMainButton.Text = "Return to Main Form";
+            this.ReturnToMainButton.UseVisualStyleBackColor = true;
+            this.ReturnToMainButton.Click += new System.EventHandler(this.ReturnToMainButton_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(254, 44);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(317, 350);
+            this.dataGridView1.TabIndex = 7;
+            // 
+            // txtError
+            // 
+            this.txtError.Location = new System.Drawing.Point(13, 418);
+            this.txtError.Name = "txtError";
+            this.txtError.ReadOnly = true;
+            this.txtError.Size = new System.Drawing.Size(764, 20);
+            this.txtError.TabIndex = 8;
+            // 
             // PlaneNoAndAirportDB2_JN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtError);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.ReturnToMainButton);
             this.Controls.Add(this.ClearButton);
             this.Controls.Add(this.SeeAirportButton);
             this.Controls.Add(this.txtPlaneNo);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.lstDisplay);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "PlaneNoAndAirportDB2_JN";
@@ -221,14 +232,13 @@
             this.Load += new System.EventHandler(this.PlaneNoAndAirportDB2_JN_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ListBox lstDisplay;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtPlaneNo;
         private System.Windows.Forms.Button SeeAirportButton;
@@ -246,5 +256,7 @@
         private System.Windows.Forms.ToolStripMenuItem planeNoAirportSQLToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem displayAllMaintenanceLogsSQLToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem displayAllMaintenanceLogsDB2ToolStripMenuItem;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtError;
     }
 }
