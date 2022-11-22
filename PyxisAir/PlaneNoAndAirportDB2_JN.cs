@@ -119,5 +119,12 @@ namespace PyxisAir
             planeNoAndAirportSQL.Show();
             this.Hide();
         }
+
+        private void displayAllMaintenanceLogsSQLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AllMaintenanceLogsSQL_JN allMaintSQL = new AllMaintenanceLogsSQL_JN();
+            allMaintSQL.Show();
+            this.Hide();
+        }
     }
 }

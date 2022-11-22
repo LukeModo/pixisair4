@@ -11,28 +11,29 @@ using System.Windows.Forms;
 
 namespace PyxisAir
 {
-    public partial class PlaneNoAndAirportSQL_JN : Form
+    public partial class AllMaintenanceLogsSQL_JN : Form
     {
         //declare class level variables
+        private BindingSource bindingSource = new BindingSource();
         SqlConnection connection;
         string connectionString;
         string SQL;
         SqlDataAdapter dataAdapter;
         DataSet dataSet;
 
-        public PlaneNoAndAirportSQL_JN()
+        public AllMaintenanceLogsSQL_JN()
         {
             InitializeComponent();
         }
 
-        private void PlaneNoAndAirportSQL_JN_Load(object sender, EventArgs e)
+        private void AllMaintenanceLogsSQL_JN_Load(object sender, EventArgs e)
         {
             //Set connection string in the load, since we will use it for all of the buttons
             connectionString = "Data Source=V2STUDENTPOC;Initial Catalog=PixisAir;" +
                 "User ID=Student;Password=ichooseGateway";
 
             //set SQL statement (we will replace this in each button)
-            SQL = "Select * FROM dbo.Airplane";
+            SQL = "Select * FROM dbo.MaintLog";
 
             //set and instantiate connection, dataAdapter, and dataSet
             connection = new SqlConnection(connectionString);
@@ -40,7 +41,7 @@ namespace PyxisAir
             dataSet = new DataSet();
         }
 
-        private void SeeAirportButton_Click(object sender, EventArgs e)
+        private void SeeMaintLogsButton_Click(object sender, EventArgs e)
         {
             //reset dataSet
             dataSet = new DataSet();
@@ -48,46 +49,43 @@ namespace PyxisAir
             //set SQL statement for this button
             //We need PlaneNo and APARCD from dbo.Airplane
             //Where PersonType = input text in textbox only
-            SQL = "SELECT PlaneNo,APARCD FROM dbo.Airplane WHERE PlaneNo='" +
-                    txtPlaneNo.Text + "' ";
+            SQL = "SELECT * FROM dbo.MaintLog ";
 
             //use try/catch block for error handling
             try
             {
                 connection.Open(); //open connection
-                dataAdapter.SelectCommand.CommandText = SQL; //set command text to SQL
-                dataAdapter.Fill(dataSet); //fill dataAdapter with dataSet
 
-                //use foreach loop to write out the relevant data to the listbox
-                foreach (DataRow dataRow in dataSet.Tables[0].Rows)
-                {
-                    lstDisplay.Items.Add("Plane Number: " + dataRow[0] +
-                        "   |   Airport: " + dataRow[1]);
-                }
+                dataGridView1.DataSource = bindingSource;
+                dataAdapter = new SqlDataAdapter(SQL, connection);
+
+                SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(dataAdapter);
+                DataTable table = new DataTable();
+
+                dataAdapter.Fill(table);
+                bindingSource.DataSource = table;
 
                 connection.Close(); //close connection
             }
             catch (Exception ex)
             {
-                lstDisplay.Items.Add(ex.Message);
+                txtError.Text = ex.Message;
             }
         }
 
         private void ClearButton_Click(object sender, EventArgs e)
         {
-            txtPlaneNo.Text = "";
-            lstDisplay.Items.Clear();
+            txtError.Text = "";
         }
 
         private void ReturnToMainButton_Click(object sender, EventArgs e)
         {
             MainForm mf = new MainForm();
             mf.Show();
-            //this.Hide();
             this.Close();
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        private void exitProgramToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
@@ -96,11 +94,10 @@ namespace PyxisAir
         {
             MainForm mf = new MainForm();
             mf.Show();
-            //this.Hide();
             this.Close();
         }
 
-        private void planesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void planesSQLToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form1 f1 = new Form1();
             f1.Show();
@@ -128,17 +125,17 @@ namespace PyxisAir
             this.Hide();
         }
 
-        private void planeNoAirportDB2ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void planeNoAndAirportSQLToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            PlaneNoAndAirportDB2_JN planeNoAndAirportDB2 = new PlaneNoAndAirportDB2_JN();
-            planeNoAndAirportDB2.Show();
+            PlaneNoAndAirportSQL_JN planeNoAndAirportSQL = new PlaneNoAndAirportSQL_JN();
+            planeNoAndAirportSQL.Show();
             this.Hide();
         }
 
-        private void displayAllMaintenanceLogsSQLToolStripMenuItem_Click(object sender, EventArgs e)
+        private void planeNoAndAirportDB2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AllMaintenanceLogsSQL_JN allMaintSQL = new AllMaintenanceLogsSQL_JN();
-            allMaintSQL.Show();
+            PlaneNoAndAirportDB2_JN planeNoAndAirportDB2 = new PlaneNoAndAirportDB2_JN();
+            planeNoAndAirportDB2.Show();
             this.Hide();
         }
     }

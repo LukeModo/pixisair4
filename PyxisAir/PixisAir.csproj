@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllMaintenanceLogsSQL_JN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllMaintenanceLogsSQL_JN.Designer.cs">
+      <DependentUpon>AllMaintenanceLogsSQL_JN.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AllMaintenanceLogsSQL_JN.resx">
+      <DependentUpon>AllMaintenanceLogsSQL_JN.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
