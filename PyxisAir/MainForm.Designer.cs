@@ -56,7 +56,7 @@
             this.btnPlanes.Name = "btnPlanes";
             this.btnPlanes.Size = new System.Drawing.Size(118, 52);
             this.btnPlanes.TabIndex = 0;
-            this.btnPlanes.Text = "Planes";
+            this.btnPlanes.Text = "Planes (LM)";
             this.btnPlanes.UseVisualStyleBackColor = true;
             this.btnPlanes.Click += new System.EventHandler(this.btnPlanes_Click);
             // 
@@ -76,7 +76,7 @@
             this.btnMaint.Name = "btnMaint";
             this.btnMaint.Size = new System.Drawing.Size(118, 52);
             this.btnMaint.TabIndex = 2;
-            this.btnMaint.Text = "Maintenance Logs";
+            this.btnMaint.Text = "Maintenance Logs (LM)";
             this.btnMaint.UseVisualStyleBackColor = true;
             this.btnMaint.Click += new System.EventHandler(this.btnMaint_Click);
             // 
@@ -116,7 +116,7 @@
             this.btnPlanesDB2.Name = "btnPlanesDB2";
             this.btnPlanesDB2.Size = new System.Drawing.Size(118, 52);
             this.btnPlanesDB2.TabIndex = 6;
-            this.btnPlanesDB2.Text = "Planes DB2";
+            this.btnPlanesDB2.Text = "Planes DB2 (LM)";
             this.btnPlanesDB2.UseVisualStyleBackColor = true;
             this.btnPlanesDB2.Click += new System.EventHandler(this.btnPlanesDB2_Click);
             // 
@@ -126,7 +126,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(118, 52);
             this.button1.TabIndex = 7;
-            this.button1.Text = "Maintenance DB2";
+            this.button1.Text = "Maintenance DB2 (LM)";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
