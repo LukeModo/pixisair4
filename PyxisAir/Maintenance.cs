@@ -1,4 +1,9 @@
-﻿using System;
+﻿//*************************************************************************************
+//Written By: Luke Modory
+//Date: 11/21/22
+//This program takes a plane number entry by the user and returns its maintenance logs using SQL
+//*************************************************************************************
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;

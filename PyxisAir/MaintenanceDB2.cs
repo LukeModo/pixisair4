@@ -1,4 +1,9 @@
-﻿using IBM.Data.DB2.iSeries;
+﻿//*************************************************************************************
+//Written By: Luke Modory
+//Date: 11/21/22
+//This program takes a plane number entry by the user and returns its maintenance logs using DB2
+//*************************************************************************************
+using IBM.Data.DB2.iSeries;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

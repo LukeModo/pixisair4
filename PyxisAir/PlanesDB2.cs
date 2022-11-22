@@ -1,4 +1,9 @@
-﻿using System;
+﻿//***************************************************
+//Written By: Luke Modory
+//Date: 11/21/22
+//This program displays all planes makes and models using DB2
+//***************************************************
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
