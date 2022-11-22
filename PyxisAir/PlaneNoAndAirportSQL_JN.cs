@@ -9,6 +9,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//*********************************************************************************
+// Assignment: Pixis Air Group Project: Team 4 Option 8 in SQL
+// Date:       November 21, 2022
+// Name:       Jessica Narlock
+// Purpose:    This form will use SQL. The form will prompt the user to enter
+//              a Plane Number, and once it is entered (if it is a valid number
+//              in the dbo.Airplane table), we will press the button and the 
+//              listbox will display that Plane Number's Airport. There is also
+//              a Clear and Return to Main Form button, and there is a menuStrip
+//              that will allow the user to exit the program, close form and 
+//              return to main form, and a Display tab that will allow the other
+//              forms to be opened there as well.
+//**********************************************************************************
+
 namespace PyxisAir
 {
     public partial class PlaneNoAndAirportSQL_JN : Form

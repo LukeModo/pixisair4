@@ -10,6 +10,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//**************************************************************************************
+// Assignment: Pixis Air Group Project: Team 4 Option 8 in DB2
+// Date:       November 21, 2022
+// Name:       Jessica Narlock
+// Purpose:    This form will use DB2. The form will prompt the user to enter
+//              a Plane Number, and once it is entered (if it is a valid number
+//              in the AIRPLANE table), we will press the button and the 
+//              listbox will display that Plane Number's Airport. There is also
+//              a Clear Error and Return to Main Form button, and there is a menuStrip
+//              that will allow the user to exit the program, close form and 
+//              return to main form, and a Display tab that will allow the other
+//              forms to be opened there as well.
+//***************************************************************************************
+
 namespace PyxisAir
 {
     public partial class PlaneNoAndAirportDB2_JN : Form

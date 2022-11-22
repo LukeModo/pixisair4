@@ -9,6 +9,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//************************************************************************************
+// Assignment: Pixis Air Group Project: Team 4 Option 2 in DB2
+// Date:       November 21, 2022
+// Name:       Jessica Narlock
+// Purpose:    This form will use DB2. The form will have a dataGridView that will
+//              display the Maintenance Log table when the See All Maintenance Logs
+//              button is pressed. Once pressed, this button will use DB2 code to 
+//              select all records and fields from MAINTLOG in FLIGHT2022 and print
+//              this table. There is also a Clear Error and Return to Main Form
+//              button, and there is a menuStrip that will allow the user to exit
+//              the program, return to main form, and a Display tab that will allow
+//              the other forms to be opened there as well.            
+//*************************************************************************************
+
 namespace PyxisAir
 {
     public partial class AllMaintenanceLogsDB2_JN : Form
