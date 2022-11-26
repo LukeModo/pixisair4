@@ -78,27 +78,6 @@ namespace PyxisAir
             this.Hide();
         }
 
-        private void planesDB2ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            PlanesDB2 planesDB = new PlanesDB2();
-            planesDB.Show();
-            this.Hide();
-        }
-
-        private void maintenanceToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Maintenance maint = new Maintenance();
-            maint.Show();
-            this.Hide();
-        }
-
-        private void maintenanceDB2ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MaintenanceDB2 maint = new MaintenanceDB2();
-            maint.Show();
-            this.Hide();
-        }
-
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -123,6 +102,62 @@ namespace PyxisAir
             AllMaintenanceLogsDB2_JN allMaintDB2 = new AllMaintenanceLogsDB2_JN();
             allMaintDB2.Show();
             this.Hide();
+        }
+
+        private void planesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.Show();
+            this.Close();
+        }
+
+        private void planesDB2ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            PlanesDB2 planesDB = new PlanesDB2();
+            planesDB.Show();
+            this.Close();
+        }
+
+        private void maintenanceToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Maintenance maint = new Maintenance();
+            maint.Show();
+            this.Close();
+        }
+
+        private void maintenanceDB2ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MaintenanceDB2 maint = new MaintenanceDB2();
+            maint.Show();
+            this.Close();
+        }
+
+        private void planeNoAndAirportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PlaneNoAndAirportSQL_JN planeNoAndAirportSQL = new PlaneNoAndAirportSQL_JN();
+            planeNoAndAirportSQL.Show();
+            this.Close();
+        }
+
+        private void planeNoAndAirportDB2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PlaneNoAndAirportDB2_JN planeNoAndAirportDB2 = new PlaneNoAndAirportDB2_JN();
+            planeNoAndAirportDB2.Show();
+            this.Close();
+        }
+
+        private void allMaintenanceLogsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AllMaintenanceLogsSQL_JN allMaintSQL = new AllMaintenanceLogsSQL_JN();
+            allMaintSQL.Show();
+            this.Close();
+        }
+
+        private void allMaintenanceLogsDB2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AllMaintenanceLogsDB2_JN allMaintDB2 = new AllMaintenanceLogsDB2_JN();
+            allMaintDB2.Show();
+            this.Close();
         }
     }
 }
