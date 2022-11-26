@@ -35,16 +35,17 @@
             this.displayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.planesSQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.planesDB2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.txtError = new System.Windows.Forms.TextBox();
-            this.SeeAllMaintLogsButton = new System.Windows.Forms.Button();
-            this.ReturnToMainButton = new System.Windows.Forms.Button();
-            this.ClearButton = new System.Windows.Forms.Button();
             this.maintenanceLogsSQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.maintenanceLogsDB2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.planeNoAndAirportSQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.planeNoAndAirportDB2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.displayAllMaintenanceLogsSQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtError = new System.Windows.Forms.TextBox();
+            this.SeeAllMaintLogsButton = new System.Windows.Forms.Button();
+            this.ReturnToMainButton = new System.Windows.Forms.Button();
+            this.ClearButton = new System.Windows.Forms.Button();
+            this.ExitButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -112,55 +113,6 @@
             this.planesDB2ToolStripMenuItem.Text = "Planes DB2";
             this.planesDB2ToolStripMenuItem.Click += new System.EventHandler(this.planesDB2ToolStripMenuItem_Click);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 95);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(775, 307);
-            this.dataGridView1.TabIndex = 1;
-            // 
-            // txtError
-            // 
-            this.txtError.Location = new System.Drawing.Point(13, 418);
-            this.txtError.Name = "txtError";
-            this.txtError.ReadOnly = true;
-            this.txtError.Size = new System.Drawing.Size(775, 20);
-            this.txtError.TabIndex = 2;
-            // 
-            // SeeAllMaintLogsButton
-            // 
-            this.SeeAllMaintLogsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SeeAllMaintLogsButton.Location = new System.Drawing.Point(13, 40);
-            this.SeeAllMaintLogsButton.Name = "SeeAllMaintLogsButton";
-            this.SeeAllMaintLogsButton.Size = new System.Drawing.Size(192, 38);
-            this.SeeAllMaintLogsButton.TabIndex = 3;
-            this.SeeAllMaintLogsButton.Text = "&See All Maintenance Logs";
-            this.SeeAllMaintLogsButton.UseVisualStyleBackColor = true;
-            this.SeeAllMaintLogsButton.Click += new System.EventHandler(this.SeeAllMaintLogsButton_Click);
-            // 
-            // ReturnToMainButton
-            // 
-            this.ReturnToMainButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReturnToMainButton.Location = new System.Drawing.Point(614, 40);
-            this.ReturnToMainButton.Name = "ReturnToMainButton";
-            this.ReturnToMainButton.Size = new System.Drawing.Size(174, 38);
-            this.ReturnToMainButton.TabIndex = 4;
-            this.ReturnToMainButton.Text = "&Return To Main Form";
-            this.ReturnToMainButton.UseVisualStyleBackColor = true;
-            this.ReturnToMainButton.Click += new System.EventHandler(this.ReturnToMainButton_Click);
-            // 
-            // ClearButton
-            // 
-            this.ClearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClearButton.Location = new System.Drawing.Point(479, 40);
-            this.ClearButton.Name = "ClearButton";
-            this.ClearButton.Size = new System.Drawing.Size(120, 38);
-            this.ClearButton.TabIndex = 5;
-            this.ClearButton.Text = "&Clear Error Msg.";
-            this.ClearButton.UseVisualStyleBackColor = true;
-            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
-            // 
             // maintenanceLogsSQLToolStripMenuItem
             // 
             this.maintenanceLogsSQLToolStripMenuItem.Name = "maintenanceLogsSQLToolStripMenuItem";
@@ -196,11 +148,72 @@
             this.displayAllMaintenanceLogsSQLToolStripMenuItem.Text = "Display All Maintenance Logs SQL";
             this.displayAllMaintenanceLogsSQLToolStripMenuItem.Click += new System.EventHandler(this.displayAllMaintenanceLogsSQLToolStripMenuItem_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(13, 95);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(775, 307);
+            this.dataGridView1.TabIndex = 1;
+            // 
+            // txtError
+            // 
+            this.txtError.Location = new System.Drawing.Point(13, 418);
+            this.txtError.Name = "txtError";
+            this.txtError.ReadOnly = true;
+            this.txtError.Size = new System.Drawing.Size(775, 20);
+            this.txtError.TabIndex = 2;
+            // 
+            // SeeAllMaintLogsButton
+            // 
+            this.SeeAllMaintLogsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SeeAllMaintLogsButton.Location = new System.Drawing.Point(13, 40);
+            this.SeeAllMaintLogsButton.Name = "SeeAllMaintLogsButton";
+            this.SeeAllMaintLogsButton.Size = new System.Drawing.Size(192, 38);
+            this.SeeAllMaintLogsButton.TabIndex = 3;
+            this.SeeAllMaintLogsButton.Text = "&See All Maintenance Logs";
+            this.SeeAllMaintLogsButton.UseVisualStyleBackColor = true;
+            this.SeeAllMaintLogsButton.Click += new System.EventHandler(this.SeeAllMaintLogsButton_Click);
+            // 
+            // ReturnToMainButton
+            // 
+            this.ReturnToMainButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReturnToMainButton.Location = new System.Drawing.Point(481, 40);
+            this.ReturnToMainButton.Name = "ReturnToMainButton";
+            this.ReturnToMainButton.Size = new System.Drawing.Size(174, 38);
+            this.ReturnToMainButton.TabIndex = 4;
+            this.ReturnToMainButton.Text = "&Return To Main Form";
+            this.ReturnToMainButton.UseVisualStyleBackColor = true;
+            this.ReturnToMainButton.Click += new System.EventHandler(this.ReturnToMainButton_Click);
+            // 
+            // ClearButton
+            // 
+            this.ClearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClearButton.Location = new System.Drawing.Point(211, 40);
+            this.ClearButton.Name = "ClearButton";
+            this.ClearButton.Size = new System.Drawing.Size(120, 38);
+            this.ClearButton.TabIndex = 5;
+            this.ClearButton.Text = "&Clear Error Msg.";
+            this.ClearButton.UseVisualStyleBackColor = true;
+            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
+            // 
+            // ExitButton
+            // 
+            this.ExitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitButton.Location = new System.Drawing.Point(661, 40);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(127, 38);
+            this.ExitButton.TabIndex = 6;
+            this.ExitButton.Text = "&Exit Program";
+            this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            // 
             // AllMaintenanceLogsDB2_JN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.ClearButton);
             this.Controls.Add(this.ReturnToMainButton);
             this.Controls.Add(this.SeeAllMaintLogsButton);
@@ -238,5 +251,6 @@
         private System.Windows.Forms.ToolStripMenuItem planeNoAndAirportSQLToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem planeNoAndAirportDB2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem displayAllMaintenanceLogsSQLToolStripMenuItem;
+        private System.Windows.Forms.Button ExitButton;
     }
 }
