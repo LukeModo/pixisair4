@@ -47,6 +47,7 @@
             this.ReturnToMainButton = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtError = new System.Windows.Forms.TextBox();
+            this.ExitButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -178,7 +179,7 @@
             // ClearButton
             // 
             this.ClearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClearButton.Location = new System.Drawing.Point(604, 250);
+            this.ClearButton.Location = new System.Drawing.Point(604, 236);
             this.ClearButton.Name = "ClearButton";
             this.ClearButton.Size = new System.Drawing.Size(173, 45);
             this.ClearButton.TabIndex = 5;
@@ -189,7 +190,7 @@
             // ReturnToMainButton
             // 
             this.ReturnToMainButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReturnToMainButton.Location = new System.Drawing.Point(604, 349);
+            this.ReturnToMainButton.Location = new System.Drawing.Point(604, 348);
             this.ReturnToMainButton.Name = "ReturnToMainButton";
             this.ReturnToMainButton.Size = new System.Drawing.Size(173, 45);
             this.ReturnToMainButton.TabIndex = 6;
@@ -213,11 +214,23 @@
             this.txtError.Size = new System.Drawing.Size(764, 20);
             this.txtError.TabIndex = 8;
             // 
+            // ExitButton
+            // 
+            this.ExitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitButton.Location = new System.Drawing.Point(604, 292);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(173, 45);
+            this.ExitButton.TabIndex = 9;
+            this.ExitButton.Text = "&Exit Program";
+            this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.button1_Click);
+            // 
             // PlaneNoAndAirportDB2_JN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.txtError);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.ReturnToMainButton);
@@ -258,5 +271,6 @@
         private System.Windows.Forms.ToolStripMenuItem displayAllMaintenanceLogsDB2ToolStripMenuItem;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txtError;
+        private System.Windows.Forms.Button ExitButton;
     }
 }

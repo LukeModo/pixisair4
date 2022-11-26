@@ -39,12 +39,13 @@
             this.maintenanceLogsDB2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.planeNoAndAirportSQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.planeNoAndAirportDB2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.displayAllMaintenanceLogsDB2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtError = new System.Windows.Forms.TextBox();
             this.SeeMaintLogsButton = new System.Windows.Forms.Button();
             this.ReturnToMainButton = new System.Windows.Forms.Button();
             this.ClearButton = new System.Windows.Forms.Button();
-            this.displayAllMaintenanceLogsDB2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ExitButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -72,15 +73,15 @@
             // exitProgramToolStripMenuItem
             // 
             this.exitProgramToolStripMenuItem.Name = "exitProgramToolStripMenuItem";
-            this.exitProgramToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.exitProgramToolStripMenuItem.Size = new System.Drawing.Size(241, 22);
             this.exitProgramToolStripMenuItem.Text = "Exit Program";
             this.exitProgramToolStripMenuItem.Click += new System.EventHandler(this.exitProgramToolStripMenuItem_Click);
             // 
             // closeReturnToMainFormToolStripMenuItem
             // 
             this.closeReturnToMainFormToolStripMenuItem.Name = "closeReturnToMainFormToolStripMenuItem";
-            this.closeReturnToMainFormToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
-            this.closeReturnToMainFormToolStripMenuItem.Text = "Close & Return to Main Form";
+            this.closeReturnToMainFormToolStripMenuItem.Size = new System.Drawing.Size(241, 22);
+            this.closeReturnToMainFormToolStripMenuItem.Text = "Close And Return to Main Form";
             this.closeReturnToMainFormToolStripMenuItem.Click += new System.EventHandler(this.closeReturnToMainFormToolStripMenuItem_Click);
             // 
             // displayToolStripMenuItem
@@ -139,6 +140,13 @@
             this.planeNoAndAirportDB2ToolStripMenuItem.Text = "Plane No. And Airport DB2";
             this.planeNoAndAirportDB2ToolStripMenuItem.Click += new System.EventHandler(this.planeNoAndAirportDB2ToolStripMenuItem_Click);
             // 
+            // displayAllMaintenanceLogsDB2ToolStripMenuItem
+            // 
+            this.displayAllMaintenanceLogsDB2ToolStripMenuItem.Name = "displayAllMaintenanceLogsDB2ToolStripMenuItem";
+            this.displayAllMaintenanceLogsDB2ToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
+            this.displayAllMaintenanceLogsDB2ToolStripMenuItem.Text = "Display All Maintenance Logs DB2";
+            this.displayAllMaintenanceLogsDB2ToolStripMenuItem.Click += new System.EventHandler(this.displayAllMaintenanceLogsDB2ToolStripMenuItem_Click);
+            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -179,7 +187,7 @@
             // ClearButton
             // 
             this.ClearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClearButton.Location = new System.Drawing.Point(454, 38);
+            this.ClearButton.Location = new System.Drawing.Point(216, 38);
             this.ClearButton.Name = "ClearButton";
             this.ClearButton.Size = new System.Drawing.Size(120, 40);
             this.ClearButton.TabIndex = 5;
@@ -187,18 +195,23 @@
             this.ClearButton.UseVisualStyleBackColor = true;
             this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
-            // displayAllMaintenanceLogsDB2ToolStripMenuItem
+            // ExitButton
             // 
-            this.displayAllMaintenanceLogsDB2ToolStripMenuItem.Name = "displayAllMaintenanceLogsDB2ToolStripMenuItem";
-            this.displayAllMaintenanceLogsDB2ToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
-            this.displayAllMaintenanceLogsDB2ToolStripMenuItem.Text = "Display All Maintenance Logs DB2";
-            this.displayAllMaintenanceLogsDB2ToolStripMenuItem.Click += new System.EventHandler(this.displayAllMaintenanceLogsDB2ToolStripMenuItem_Click);
+            this.ExitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitButton.Location = new System.Drawing.Point(478, 38);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(107, 40);
+            this.ExitButton.TabIndex = 6;
+            this.ExitButton.Text = "&Exit Program";
+            this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // AllMaintenanceLogsSQL_JN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.ClearButton);
             this.Controls.Add(this.ReturnToMainButton);
             this.Controls.Add(this.SeeMaintLogsButton);
@@ -236,5 +249,6 @@
         private System.Windows.Forms.ToolStripMenuItem planeNoAndAirportSQLToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem planeNoAndAirportDB2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem displayAllMaintenanceLogsDB2ToolStripMenuItem;
+        private System.Windows.Forms.Button ExitButton;
     }
 }
