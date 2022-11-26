@@ -47,6 +47,15 @@
             this.PlaneNoAirportDB2Button = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.AllMaintLogsDB2Button = new System.Windows.Forms.Button();
+            this.displayToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.planesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.planesDB2ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.maintenanceToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.maintenanceDB2ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.planeNoAndAirportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.planeNoAndAirportDB2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.allMaintenanceLogsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.allMaintenanceLogsDB2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -133,7 +142,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
+            this.fileToolStripMenuItem,
+            this.displayToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -157,7 +167,7 @@
             this.maintenanceToolStripMenuItem,
             this.maintenanceDB2ToolStripMenuItem});
             this.displayToolStripMenuItem.Name = "displayToolStripMenuItem";
-            this.displayToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.displayToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.displayToolStripMenuItem.Text = "Display";
             // 
             // planesToolStripMenuItem
@@ -191,7 +201,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -224,6 +234,69 @@
             this.AllMaintLogsDB2Button.Text = "Display All Maintenance Logs DB2 (JN)";
             this.AllMaintLogsDB2Button.UseVisualStyleBackColor = true;
             this.AllMaintLogsDB2Button.Click += new System.EventHandler(this.AllMaintLogsDB2Button_Click);
+            // 
+            // displayToolStripMenuItem1
+            // 
+            this.displayToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.planesToolStripMenuItem1,
+            this.planesDB2ToolStripMenuItem1,
+            this.maintenanceToolStripMenuItem1,
+            this.maintenanceDB2ToolStripMenuItem1,
+            this.planeNoAndAirportToolStripMenuItem,
+            this.planeNoAndAirportDB2ToolStripMenuItem,
+            this.allMaintenanceLogsToolStripMenuItem,
+            this.allMaintenanceLogsDB2ToolStripMenuItem});
+            this.displayToolStripMenuItem1.Name = "displayToolStripMenuItem1";
+            this.displayToolStripMenuItem1.Size = new System.Drawing.Size(57, 20);
+            this.displayToolStripMenuItem1.Text = "Display";
+            // 
+            // planesToolStripMenuItem1
+            // 
+            this.planesToolStripMenuItem1.Name = "planesToolStripMenuItem1";
+            this.planesToolStripMenuItem1.Size = new System.Drawing.Size(212, 22);
+            this.planesToolStripMenuItem1.Text = "Planes";
+            // 
+            // planesDB2ToolStripMenuItem1
+            // 
+            this.planesDB2ToolStripMenuItem1.Name = "planesDB2ToolStripMenuItem1";
+            this.planesDB2ToolStripMenuItem1.Size = new System.Drawing.Size(212, 22);
+            this.planesDB2ToolStripMenuItem1.Text = "PlanesDB2";
+            // 
+            // maintenanceToolStripMenuItem1
+            // 
+            this.maintenanceToolStripMenuItem1.Name = "maintenanceToolStripMenuItem1";
+            this.maintenanceToolStripMenuItem1.Size = new System.Drawing.Size(212, 22);
+            this.maintenanceToolStripMenuItem1.Text = "Maintenance";
+            // 
+            // maintenanceDB2ToolStripMenuItem1
+            // 
+            this.maintenanceDB2ToolStripMenuItem1.Name = "maintenanceDB2ToolStripMenuItem1";
+            this.maintenanceDB2ToolStripMenuItem1.Size = new System.Drawing.Size(212, 22);
+            this.maintenanceDB2ToolStripMenuItem1.Text = "Maintenance DB2";
+            // 
+            // planeNoAndAirportToolStripMenuItem
+            // 
+            this.planeNoAndAirportToolStripMenuItem.Name = "planeNoAndAirportToolStripMenuItem";
+            this.planeNoAndAirportToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.planeNoAndAirportToolStripMenuItem.Text = "Plane No and Airport";
+            // 
+            // planeNoAndAirportDB2ToolStripMenuItem
+            // 
+            this.planeNoAndAirportDB2ToolStripMenuItem.Name = "planeNoAndAirportDB2ToolStripMenuItem";
+            this.planeNoAndAirportDB2ToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.planeNoAndAirportDB2ToolStripMenuItem.Text = "Plane No and Airport DB2";
+            // 
+            // allMaintenanceLogsToolStripMenuItem
+            // 
+            this.allMaintenanceLogsToolStripMenuItem.Name = "allMaintenanceLogsToolStripMenuItem";
+            this.allMaintenanceLogsToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.allMaintenanceLogsToolStripMenuItem.Text = "All Maintenance Logs";
+            // 
+            // allMaintenanceLogsDB2ToolStripMenuItem
+            // 
+            this.allMaintenanceLogsDB2ToolStripMenuItem.Name = "allMaintenanceLogsDB2ToolStripMenuItem";
+            this.allMaintenanceLogsDB2ToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.allMaintenanceLogsDB2ToolStripMenuItem.Text = "All Maintenance Logs DB2";
             // 
             // MainForm
             // 
@@ -275,5 +348,14 @@
         private System.Windows.Forms.Button PlaneNoAirportDB2Button;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button AllMaintLogsDB2Button;
+        private System.Windows.Forms.ToolStripMenuItem displayToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem planesToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem planesDB2ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem maintenanceToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem maintenanceDB2ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem planeNoAndAirportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem planeNoAndAirportDB2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem allMaintenanceLogsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem allMaintenanceLogsDB2ToolStripMenuItem;
     }
 }
