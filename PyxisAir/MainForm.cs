@@ -21,7 +21,7 @@ namespace PyxisAir
         {
             Form1 f1 = new Form1();
             f1.Show();
-            this.Hide();
+            this.Close();
             
         }
 
@@ -34,7 +34,7 @@ namespace PyxisAir
         {
             Maintenance maint = new Maintenance();
             maint.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -46,7 +46,7 @@ namespace PyxisAir
         {
             PlaneNoAndAirportSQL_JN planeNoAndAirportSQL = new PlaneNoAndAirportSQL_JN();
             planeNoAndAirportSQL.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -61,21 +61,21 @@ namespace PyxisAir
         {
             PlanesDB2 planesDB = new PlanesDB2();
             planesDB.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             MaintenanceDB2 maint = new MaintenanceDB2();
             maint.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void planesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form1 f1 = new Form1();
             f1.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -87,21 +87,21 @@ namespace PyxisAir
         {
             PlaneNoAndAirportDB2_JN planeNoAndAirportDB2 = new PlaneNoAndAirportDB2_JN();
             planeNoAndAirportDB2.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
             AllMaintenanceLogsSQL_JN allMaintSQL = new AllMaintenanceLogsSQL_JN();
             allMaintSQL.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void AllMaintLogsDB2Button_Click(object sender, EventArgs e)
         {
             AllMaintenanceLogsDB2_JN allMaintDB2 = new AllMaintenanceLogsDB2_JN();
             allMaintDB2.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void planesToolStripMenuItem1_Click(object sender, EventArgs e)
