@@ -121,6 +121,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkOrderAndDescDB2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkOrderAndDescDB2.designer.cs">
+      <DependentUpon>WorkOrderAndDescDB2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOrderAndDescSQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkOrderAndDescSQL.designer.cs">
+      <DependentUpon>WorkOrderAndDescSQL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZipcodeDB2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZipcodeDB2.designer.cs">
+      <DependentUpon>ZipcodeDB2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZipcodeSQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZipcodeSQL.designer.cs">
+      <DependentUpon>ZipcodeSQL.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AllMaintenanceLogsDB2_JN.resx">
       <DependentUpon>AllMaintenanceLogsDB2_JN.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +181,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="WorkOrderAndDescDB2.resx">
+      <DependentUpon>WorkOrderAndDescDB2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkOrderAndDescSQL.resx">
+      <DependentUpon>WorkOrderAndDescSQL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZipcodeDB2.resx">
+      <DependentUpon>ZipcodeDB2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZipcodeSQL.resx">
+      <DependentUpon>ZipcodeSQL.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="PixisAirDataSet.xsc">
       <DependentUpon>PixisAirDataSet.xsd</DependentUpon>
     </None>
