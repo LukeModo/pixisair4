@@ -89,17 +89,16 @@ namespace PyxisAir
             if (dialogResult == DialogResult.Cancel)
                 e.Cancel = true;
         }
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
-        private void mainFormToolStripMenuItem_Click(object sender, EventArgs e)
+        private void mainFormToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             MainForm main = new MainForm();
             main.Show();
             this.Hide();
-        }
-
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
