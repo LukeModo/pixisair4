@@ -51,6 +51,14 @@
             this.PlaneNoAirportDB2Button = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.AllMaintLogsDB2Button = new System.Windows.Forms.Button();
+            this.btnWorkJL = new System.Windows.Forms.Button();
+            this.btnWorkDB2JL = new System.Windows.Forms.Button();
+            this.btnZipcodesDB2JL = new System.Windows.Forms.Button();
+            this.btnZipcodesJL = new System.Windows.Forms.Button();
+            this.workOrderAndDescriptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.workOrderAndDescriptionDB2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.zipcodesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.zipcodesDB2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -156,7 +164,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -170,7 +178,11 @@
             this.planeNoAndAirportToolStripMenuItem,
             this.planeNoAndAirportDB2ToolStripMenuItem,
             this.allMaintenanceLogsToolStripMenuItem,
-            this.allMaintenanceLogsDB2ToolStripMenuItem});
+            this.allMaintenanceLogsDB2ToolStripMenuItem,
+            this.workOrderAndDescriptionToolStripMenuItem,
+            this.workOrderAndDescriptionDB2ToolStripMenuItem,
+            this.zipcodesToolStripMenuItem,
+            this.zipcodesDB2ToolStripMenuItem});
             this.displayToolStripMenuItem1.Name = "displayToolStripMenuItem1";
             this.displayToolStripMenuItem1.Size = new System.Drawing.Size(57, 20);
             this.displayToolStripMenuItem1.Text = "Display";
@@ -261,11 +273,79 @@
             this.AllMaintLogsDB2Button.UseVisualStyleBackColor = true;
             this.AllMaintLogsDB2Button.Click += new System.EventHandler(this.AllMaintLogsDB2Button_Click);
             // 
+            // btnWorkJL
+            // 
+            this.btnWorkJL.Location = new System.Drawing.Point(78, 214);
+            this.btnWorkJL.Name = "btnWorkJL";
+            this.btnWorkJL.Size = new System.Drawing.Size(118, 53);
+            this.btnWorkJL.TabIndex = 12;
+            this.btnWorkJL.Text = "Work Order and Description (JL)";
+            this.btnWorkJL.UseVisualStyleBackColor = true;
+            this.btnWorkJL.Click += new System.EventHandler(this.btnWorkJL_Click);
+            // 
+            // btnWorkDB2JL
+            // 
+            this.btnWorkDB2JL.Location = new System.Drawing.Point(78, 273);
+            this.btnWorkDB2JL.Name = "btnWorkDB2JL";
+            this.btnWorkDB2JL.Size = new System.Drawing.Size(118, 53);
+            this.btnWorkDB2JL.TabIndex = 13;
+            this.btnWorkDB2JL.Text = "Work Order and Description DB2 (JL)";
+            this.btnWorkDB2JL.UseVisualStyleBackColor = true;
+            this.btnWorkDB2JL.Click += new System.EventHandler(this.btnWorkDB2JL_Click);
+            // 
+            // btnZipcodesDB2JL
+            // 
+            this.btnZipcodesDB2JL.Location = new System.Drawing.Point(214, 273);
+            this.btnZipcodesDB2JL.Name = "btnZipcodesDB2JL";
+            this.btnZipcodesDB2JL.Size = new System.Drawing.Size(118, 53);
+            this.btnZipcodesDB2JL.TabIndex = 15;
+            this.btnZipcodesDB2JL.Text = "Zipcodes DB2 (JL)";
+            this.btnZipcodesDB2JL.UseVisualStyleBackColor = true;
+            this.btnZipcodesDB2JL.Click += new System.EventHandler(this.btnZipcodesDB2JL_Click);
+            // 
+            // btnZipcodesJL
+            // 
+            this.btnZipcodesJL.Location = new System.Drawing.Point(214, 214);
+            this.btnZipcodesJL.Name = "btnZipcodesJL";
+            this.btnZipcodesJL.Size = new System.Drawing.Size(118, 53);
+            this.btnZipcodesJL.TabIndex = 14;
+            this.btnZipcodesJL.Text = "Zipcodes (JL)";
+            this.btnZipcodesJL.UseVisualStyleBackColor = true;
+            this.btnZipcodesJL.Click += new System.EventHandler(this.btnZipcodesJL_Click);
+            // 
+            // workOrderAndDescriptionToolStripMenuItem
+            // 
+            this.workOrderAndDescriptionToolStripMenuItem.Name = "workOrderAndDescriptionToolStripMenuItem";
+            this.workOrderAndDescriptionToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
+            this.workOrderAndDescriptionToolStripMenuItem.Text = "Work Order and Description";
+            // 
+            // workOrderAndDescriptionDB2ToolStripMenuItem
+            // 
+            this.workOrderAndDescriptionDB2ToolStripMenuItem.Name = "workOrderAndDescriptionDB2ToolStripMenuItem";
+            this.workOrderAndDescriptionDB2ToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
+            this.workOrderAndDescriptionDB2ToolStripMenuItem.Text = "Work Order and Description DB2";
+            // 
+            // zipcodesToolStripMenuItem
+            // 
+            this.zipcodesToolStripMenuItem.Name = "zipcodesToolStripMenuItem";
+            this.zipcodesToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
+            this.zipcodesToolStripMenuItem.Text = "Zipcodes";
+            // 
+            // zipcodesDB2ToolStripMenuItem
+            // 
+            this.zipcodesDB2ToolStripMenuItem.Name = "zipcodesDB2ToolStripMenuItem";
+            this.zipcodesDB2ToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
+            this.zipcodesDB2ToolStripMenuItem.Text = "Zipcodes DB2";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnZipcodesDB2JL);
+            this.Controls.Add(this.btnZipcodesJL);
+            this.Controls.Add(this.btnWorkDB2JL);
+            this.Controls.Add(this.btnWorkJL);
             this.Controls.Add(this.AllMaintLogsDB2Button);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.PlaneNoAirportDB2Button);
@@ -315,5 +395,13 @@
         private System.Windows.Forms.ToolStripMenuItem planeNoAndAirportDB2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem allMaintenanceLogsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem allMaintenanceLogsDB2ToolStripMenuItem;
+        private System.Windows.Forms.Button btnWorkJL;
+        private System.Windows.Forms.Button btnWorkDB2JL;
+        private System.Windows.Forms.Button btnZipcodesDB2JL;
+        private System.Windows.Forms.Button btnZipcodesJL;
+        private System.Windows.Forms.ToolStripMenuItem workOrderAndDescriptionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem workOrderAndDescriptionDB2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem zipcodesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem zipcodesDB2ToolStripMenuItem;
     }
 }

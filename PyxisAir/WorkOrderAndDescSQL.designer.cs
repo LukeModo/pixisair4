@@ -1,4 +1,4 @@
-﻿namespace PyxisProject4_LeAir
+﻿namespace PyxisAir
 {
     partial class WorkOrderAndDescSQL
     {
@@ -36,12 +36,13 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.closeAndReturnToMainFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitProgramToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.displayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.workOrderAndDescDB2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zipcodeSQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zipcodeDB2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnReturnToMain = new System.Windows.Forms.Button();
+            this.closeAndReturnToMainFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,7 +82,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(79, 371);
+            this.btnExit.Location = new System.Drawing.Point(79, 393);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(134, 25);
             this.btnExit.TabIndex = 14;
@@ -91,7 +92,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(79, 320);
+            this.btnClear.Location = new System.Drawing.Point(79, 308);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(134, 25);
             this.btnClear.TabIndex = 13;
@@ -113,18 +114,10 @@
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.closeAndReturnToMainFormToolStripMenuItem,
             this.exitProgramToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
-            // 
-            // closeAndReturnToMainFormToolStripMenuItem
-            // 
-            this.closeAndReturnToMainFormToolStripMenuItem.Name = "closeAndReturnToMainFormToolStripMenuItem";
-            this.closeAndReturnToMainFormToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
-            this.closeAndReturnToMainFormToolStripMenuItem.Text = "Close and Return to Main Form";
-            this.closeAndReturnToMainFormToolStripMenuItem.Click += new System.EventHandler(this.closeAndReturnToMainFormToolStripMenuItem_Click);
             // 
             // exitProgramToolStripMenuItem
             // 
@@ -138,7 +131,8 @@
             this.displayToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.workOrderAndDescDB2ToolStripMenuItem,
             this.zipcodeSQLToolStripMenuItem,
-            this.zipcodeDB2ToolStripMenuItem});
+            this.zipcodeDB2ToolStripMenuItem,
+            this.closeAndReturnToMainFormToolStripMenuItem});
             this.displayToolStripMenuItem.Name = "displayToolStripMenuItem";
             this.displayToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
             this.displayToolStripMenuItem.Text = "Display";
@@ -146,26 +140,47 @@
             // workOrderAndDescDB2ToolStripMenuItem
             // 
             this.workOrderAndDescDB2ToolStripMenuItem.Name = "workOrderAndDescDB2ToolStripMenuItem";
-            this.workOrderAndDescDB2ToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.workOrderAndDescDB2ToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
             this.workOrderAndDescDB2ToolStripMenuItem.Text = "WorkOrderAndDescDB2";
+            this.workOrderAndDescDB2ToolStripMenuItem.Click += new System.EventHandler(this.workOrderAndDescDB2ToolStripMenuItem_Click);
             // 
             // zipcodeSQLToolStripMenuItem
             // 
             this.zipcodeSQLToolStripMenuItem.Name = "zipcodeSQLToolStripMenuItem";
-            this.zipcodeSQLToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.zipcodeSQLToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
             this.zipcodeSQLToolStripMenuItem.Text = "ZipcodeSQL";
+            this.zipcodeSQLToolStripMenuItem.Click += new System.EventHandler(this.zipcodeSQLToolStripMenuItem_Click);
             // 
             // zipcodeDB2ToolStripMenuItem
             // 
             this.zipcodeDB2ToolStripMenuItem.Name = "zipcodeDB2ToolStripMenuItem";
-            this.zipcodeDB2ToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.zipcodeDB2ToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
             this.zipcodeDB2ToolStripMenuItem.Text = "ZipcodeDB2";
+            this.zipcodeDB2ToolStripMenuItem.Click += new System.EventHandler(this.zipcodeDB2ToolStripMenuItem_Click);
+            // 
+            // btnReturnToMain
+            // 
+            this.btnReturnToMain.Location = new System.Drawing.Point(79, 345);
+            this.btnReturnToMain.Name = "btnReturnToMain";
+            this.btnReturnToMain.Size = new System.Drawing.Size(134, 36);
+            this.btnReturnToMain.TabIndex = 16;
+            this.btnReturnToMain.Text = "Return to Main Form";
+            this.btnReturnToMain.UseVisualStyleBackColor = true;
+            this.btnReturnToMain.Click += new System.EventHandler(this.btnReturnToMain_Click);
+            // 
+            // closeAndReturnToMainFormToolStripMenuItem
+            // 
+            this.closeAndReturnToMainFormToolStripMenuItem.Name = "closeAndReturnToMainFormToolStripMenuItem";
+            this.closeAndReturnToMainFormToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
+            this.closeAndReturnToMainFormToolStripMenuItem.Text = "Close and Return to Main Form";
+            this.closeAndReturnToMainFormToolStripMenuItem.Click += new System.EventHandler(this.closeAndReturnToMainFormToolStripMenuItem_Click_1);
             // 
             // WorkOrderAndDescSQL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnReturnToMain);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.textBox1);
@@ -194,12 +209,13 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem closeAndReturnToMainFormToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitProgramToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem displayToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem workOrderAndDescDB2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem zipcodeSQLToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem zipcodeDB2ToolStripMenuItem;
+        private System.Windows.Forms.Button btnReturnToMain;
+        private System.Windows.Forms.ToolStripMenuItem closeAndReturnToMainFormToolStripMenuItem;
     }
 }
 

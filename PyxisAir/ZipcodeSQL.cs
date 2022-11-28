@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace PyxisProject4_LeAir
+namespace PyxisAir
 {
     public partial class ZipcodeSQL : Form
     {
@@ -77,6 +77,41 @@ namespace PyxisProject4_LeAir
         private void btnClear_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
+        }
+
+        private void closeAndReturnToMainFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MainForm mf = new MainForm();
+            mf.Show();
+            this.Hide();
+        }
+
+        private void btnReturnToMain_Click(object sender, EventArgs e)
+        {
+            MainForm mf = new MainForm();
+            mf.Show();
+            this.Hide();
+        }
+
+        private void workOrderAndDescSQLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            WorkOrderAndDescSQL workOrder = new WorkOrderAndDescSQL();
+            workOrder.Show();
+            this.Hide();
+        }
+
+        private void workOrderAndDescDB2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            WorkOrderAndDescDB2 workOrderDB2 = new WorkOrderAndDescDB2();
+            workOrderDB2.Show();
+            this.Hide();
+        }
+
+        private void zipcodeDB2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ZipcodeDB2 zipcodeDB2 = new ZipcodeDB2();
+            zipcodeDB2.Show();
+            this.Hide();
         }
     }
 }

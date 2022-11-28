@@ -8,8 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using PyxisAir;
 
-namespace PyxisProject4_LeAir
+namespace PyxisAir
 {
     public partial class WorkOrderAndDescSQL : Form
     {
@@ -65,6 +66,7 @@ namespace PyxisProject4_LeAir
         private void btnClear_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
+            textBox1.Clear();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -72,14 +74,46 @@ namespace PyxisProject4_LeAir
             Application.Exit();
         }
 
-        private void closeAndReturnToMainFormToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void exitProgramToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnReturnToMain_Click(object sender, EventArgs e)
+        {
+            MainForm mf = new MainForm();
+            mf.Show();
+            this.Hide();
+        }
+
+        private void closeAndReturnToMainFormToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            MainForm mf = new MainForm();
+            mf.Show();
+            this.Hide();
+        }
+
+        private void workOrderAndDescDB2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            WorkOrderAndDescDB2 workOrderDB2 = new WorkOrderAndDescDB2();
+            workOrderDB2.Show();
+            this.Hide();
+        }
+
+        private void zipcodeSQLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ZipcodeSQL zipcode = new ZipcodeSQL();
+            zipcode.Show();
+            this.Hide();
+        }
+
+        private void zipcodeDB2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ZipcodeDB2 zipcodeDB2 = new ZipcodeDB2();
+            zipcodeDB2.Show();
+            this.Hide();
         }
     }
 }

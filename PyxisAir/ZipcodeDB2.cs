@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using IBM.Data.DB2.iSeries;
 
 
-namespace PyxisProject4_LeAir
+namespace PyxisAir
 {
     public partial class ZipcodeDB2 : Form
     {
@@ -61,6 +61,41 @@ namespace PyxisProject4_LeAir
         private void exitProgramToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void closeAndReturnToMainFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MainForm mf = new MainForm();
+            mf.Show();
+            this.Hide();
+        }
+
+        private void btnReturnToMain_Click(object sender, EventArgs e)
+        {
+            MainForm mf = new MainForm();
+            mf.Show();
+            this.Hide();
+        }
+
+        private void workOrderAndDescSQLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            WorkOrderAndDescSQL workOrder = new WorkOrderAndDescSQL();
+            workOrder.Show();
+            this.Hide();
+        }
+
+        private void workOrderAndDescDB2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            WorkOrderAndDescDB2 workOrderDB2 = new WorkOrderAndDescDB2();
+            workOrderDB2.Show();
+            this.Hide();
+        }
+
+        private void zipcodeSQLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ZipcodeSQL zipcode = new ZipcodeSQL();
+            zipcode.Show();
+            this.Hide();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PyxisAir;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -157,6 +158,34 @@ namespace PyxisAir
         {
             AllMaintenanceLogsDB2_JN allMaintDB2 = new AllMaintenanceLogsDB2_JN();
             allMaintDB2.Show();
+            this.Hide();
+        }
+
+        private void btnWorkJL_Click(object sender, EventArgs e)
+        {
+            WorkOrderAndDescSQL workOrder = new WorkOrderAndDescSQL();
+            workOrder.Show();
+            this.Hide();
+        }
+
+        private void btnWorkDB2JL_Click(object sender, EventArgs e)
+        {
+            WorkOrderAndDescDB2 workOrderDB2 = new WorkOrderAndDescDB2();
+            workOrderDB2.Show();
+            this.Hide();
+        }
+
+        private void btnZipcodesJL_Click(object sender, EventArgs e)
+        {
+            ZipcodeSQL zipcode = new ZipcodeSQL();      
+            zipcode.Show();
+            this.Hide();
+        }
+
+        private void btnZipcodesDB2JL_Click(object sender, EventArgs e)
+        {
+            ZipcodeDB2 zipcodeDB2 = new ZipcodeDB2();   
+            zipcodeDB2.Show();
             this.Hide();
         }
     }
