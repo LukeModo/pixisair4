@@ -97,5 +97,10 @@ namespace PyxisAir
             zipcode.Show();
             this.Hide();
         }
+
+        private void ZipcodeDB2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

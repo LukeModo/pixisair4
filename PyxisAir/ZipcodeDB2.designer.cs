@@ -37,10 +37,10 @@
             this.workOrderAndDescSQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.workOrderAndDescDB2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zipcodeSQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.closeAndReturnToMainFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
-            this.closeAndReturnToMainFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnReturnToMain = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -86,7 +86,7 @@
             // exitProgramToolStripMenuItem
             // 
             this.exitProgramToolStripMenuItem.Name = "exitProgramToolStripMenuItem";
-            this.exitProgramToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitProgramToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.exitProgramToolStripMenuItem.Text = "Exit Program";
             this.exitProgramToolStripMenuItem.Click += new System.EventHandler(this.exitProgramToolStripMenuItem_Click);
             // 
@@ -122,6 +122,13 @@
             this.zipcodeSQLToolStripMenuItem.Text = "ZipcodeSQL";
             this.zipcodeSQLToolStripMenuItem.Click += new System.EventHandler(this.zipcodeSQLToolStripMenuItem_Click);
             // 
+            // closeAndReturnToMainFormToolStripMenuItem
+            // 
+            this.closeAndReturnToMainFormToolStripMenuItem.Name = "closeAndReturnToMainFormToolStripMenuItem";
+            this.closeAndReturnToMainFormToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
+            this.closeAndReturnToMainFormToolStripMenuItem.Text = "Close and Return to Main Form";
+            this.closeAndReturnToMainFormToolStripMenuItem.Click += new System.EventHandler(this.closeAndReturnToMainFormToolStripMenuItem_Click);
+            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(28, 418);
@@ -150,13 +157,6 @@
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // closeAndReturnToMainFormToolStripMenuItem
-            // 
-            this.closeAndReturnToMainFormToolStripMenuItem.Name = "closeAndReturnToMainFormToolStripMenuItem";
-            this.closeAndReturnToMainFormToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
-            this.closeAndReturnToMainFormToolStripMenuItem.Text = "Close and Return to Main Form";
-            this.closeAndReturnToMainFormToolStripMenuItem.Click += new System.EventHandler(this.closeAndReturnToMainFormToolStripMenuItem_Click);
-            // 
             // btnReturnToMain
             // 
             this.btnReturnToMain.Location = new System.Drawing.Point(52, 268);
@@ -182,6 +182,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "ZipcodeDB2";
             this.Text = "ZipcodeDB2";
+            this.Load += new System.EventHandler(this.ZipcodeDB2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

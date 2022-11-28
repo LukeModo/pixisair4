@@ -68,6 +68,7 @@
             this.txtPlaneNo.Name = "txtPlaneNo";
             this.txtPlaneNo.Size = new System.Drawing.Size(184, 20);
             this.txtPlaneNo.TabIndex = 2;
+            this.txtPlaneNo.TextChanged += new System.EventHandler(this.txtPlaneNo_TextChanged);
             // 
             // SeeAirportButton
             // 

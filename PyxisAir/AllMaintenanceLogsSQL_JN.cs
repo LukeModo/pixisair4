@@ -42,11 +42,11 @@ namespace PyxisAir
 
         private void AllMaintenanceLogsSQL_JN_Load(object sender, EventArgs e)
         {
-            //Set connection string in the load, since we will use it for all of the buttons
+            //Set initial connection string in the load
             connectionString = "Data Source=V2STUDENTPOC;Initial Catalog=PixisAir;" +
                 "User ID=Student;Password=ichooseGateway";
 
-            //set SQL statement (we will replace this in each button)
+            //set SQL statement 
             SQL = "Select * FROM dbo.MaintLog";
 
             //set and instantiate connection, dataAdapter, and dataSet

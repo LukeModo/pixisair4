@@ -27,6 +27,7 @@ namespace PyxisAir
 {
     public partial class AllMaintenanceLogsDB2_JN : Form
     {
+        //declare class level variables
         private BindingSource bindingSource = new BindingSource();
         iDB2Connection conn;
         iDB2DataAdapter adapter;
@@ -47,31 +48,42 @@ namespace PyxisAir
             string sql;
             try
             {
+                //Instantiate connection string
                 conn = new iDB2Connection("DataSource=deathstar.gtc.edu");
+                //set SQL statement
                 sql = "SELECT * FROM MAINTLOG";
 
+                //bind dataGridView1's data source to bindingSource
                 dataGridView1.DataSource = bindingSource;
                 adapter = new iDB2DataAdapter(sql, conn);
 
+                //Use adapter to set up the commandBuilder, and create data table
                 iDB2CommandBuilder commandBuilder = new iDB2CommandBuilder(adapter);
                 DataTable table = new DataTable();
 
+                //Fill the adapter with table, and set bindingSource's 
+                //Data Source to table.
                 adapter.Fill(table);
                 bindingSource.DataSource = table;
 
+                //close the connection
                 conn.Close();
             }
             catch (Exception ex)
             {
+                //Error messages will display in the txtError textbox at the
+                // bottom of the form.
                 txtError.Text = ex.Message;
             }
         }
 
+        //Clear textbox
         private void ClearButton_Click(object sender, EventArgs e)
         {
             txtError.Text = "";
         }
 
+        //Return to Main Form button
         private void ReturnToMainButton_Click(object sender, EventArgs e)
         {
             MainForm mf = new MainForm();
@@ -80,11 +92,13 @@ namespace PyxisAir
             this.Close();
         }
 
+        //Exit Program Button from menustrip
         private void exitProgramToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        //Return to Main Form button from menustrip
         private void closeReturnToMainFormToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MainForm mf = new MainForm();
