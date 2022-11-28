@@ -92,16 +92,6 @@
     <Compile Include="MaintenanceDB2.Designer.cs">
       <DependentUpon>MaintenanceDB2.cs</DependentUpon>
     </Compile>
-    <Compile Include="PixisAirDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PixisAirDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="PixisAirDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PixisAirDataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="PixisAirDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -207,28 +197,6 @@
     <EmbeddedResource Include="ZipcodeSQL.resx">
       <DependentUpon>ZipcodeSQL.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="PixisAirDataSet.xsc">
-      <DependentUpon>PixisAirDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="PixisAirDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PixisAirDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="PixisAirDataSet.xss">
-      <DependentUpon>PixisAirDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="PixisAirDataSet1.xsc">
-      <DependentUpon>PixisAirDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="PixisAirDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PixisAirDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="PixisAirDataSet1.xss">
-      <DependentUpon>PixisAirDataSet1.xsd</DependentUpon>
-    </None>
     <None Include="PixisAirDataSet2.xsc">
       <DependentUpon>PixisAirDataSet2.xsd</DependentUpon>
     </None>

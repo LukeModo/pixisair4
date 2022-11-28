@@ -31,7 +31,7 @@ namespace PyxisAir
         {
             string txtBoxVal = planeNoTextBox.Text;
             string connectionString = "DataSource=deathstar.gtc.edu";
-            string SQL = "SELECT PLANENO,LOGNO,TASKID,MNTSTRDATE,MNTENDDATE,STATUS,MNTCOST FROM MAINTLOG WHERE PLANENO LIKE '" + txtBoxVal + "'"; ;
+            string SQL = "SELECT PLANENO,LOGNO,TASKID,MNTSTRDATE,MNTENDDATE,STATUS,MNTCOST FROM MAINTLOG WHERE PLANENO = '" + txtBoxVal + "'"; ;
 
             try
             {
