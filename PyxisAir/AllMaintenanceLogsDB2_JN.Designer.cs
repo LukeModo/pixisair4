@@ -33,13 +33,10 @@
             this.exitProgramToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeReturnToMainFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.displayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.planesSQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.planesDB2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.maintenanceLogsSQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.maintenanceLogsDB2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.planeNoAndAirportSQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.planeNoAndAirportDB2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.displayAllMaintenanceLogsSQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.closeAndReturnToMainFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtError = new System.Windows.Forms.TextBox();
             this.SeeAllMaintLogsButton = new System.Windows.Forms.Button();
@@ -87,45 +84,13 @@
             // displayToolStripMenuItem
             // 
             this.displayToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.planesSQLToolStripMenuItem,
-            this.planesDB2ToolStripMenuItem,
-            this.maintenanceLogsSQLToolStripMenuItem,
-            this.maintenanceLogsDB2ToolStripMenuItem,
             this.planeNoAndAirportSQLToolStripMenuItem,
             this.planeNoAndAirportDB2ToolStripMenuItem,
-            this.displayAllMaintenanceLogsSQLToolStripMenuItem});
+            this.displayAllMaintenanceLogsSQLToolStripMenuItem,
+            this.closeAndReturnToMainFormToolStripMenuItem});
             this.displayToolStripMenuItem.Name = "displayToolStripMenuItem";
-            this.displayToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
-            this.displayToolStripMenuItem.Text = "Display";
-            this.displayToolStripMenuItem.Click += new System.EventHandler(this.displayToolStripMenuItem_Click);
-            // 
-            // planesSQLToolStripMenuItem
-            // 
-            this.planesSQLToolStripMenuItem.Name = "planesSQLToolStripMenuItem";
-            this.planesSQLToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
-            this.planesSQLToolStripMenuItem.Text = "Planes SQL";
-            this.planesSQLToolStripMenuItem.Click += new System.EventHandler(this.planesSQLToolStripMenuItem_Click);
-            // 
-            // planesDB2ToolStripMenuItem
-            // 
-            this.planesDB2ToolStripMenuItem.Name = "planesDB2ToolStripMenuItem";
-            this.planesDB2ToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
-            this.planesDB2ToolStripMenuItem.Text = "Planes DB2";
-            this.planesDB2ToolStripMenuItem.Click += new System.EventHandler(this.planesDB2ToolStripMenuItem_Click);
-            // 
-            // maintenanceLogsSQLToolStripMenuItem
-            // 
-            this.maintenanceLogsSQLToolStripMenuItem.Name = "maintenanceLogsSQLToolStripMenuItem";
-            this.maintenanceLogsSQLToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
-            this.maintenanceLogsSQLToolStripMenuItem.Text = "Maintenance Logs SQL";
-            this.maintenanceLogsSQLToolStripMenuItem.Click += new System.EventHandler(this.maintenanceLogsSQLToolStripMenuItem_Click);
-            // 
-            // maintenanceLogsDB2ToolStripMenuItem
-            // 
-            this.maintenanceLogsDB2ToolStripMenuItem.Name = "maintenanceLogsDB2ToolStripMenuItem";
-            this.maintenanceLogsDB2ToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
-            this.maintenanceLogsDB2ToolStripMenuItem.Text = "Maintenance Logs DB2";
-            this.maintenanceLogsDB2ToolStripMenuItem.Click += new System.EventHandler(this.maintenanceLogsDB2ToolStripMenuItem_Click);
+            this.displayToolStripMenuItem.Size = new System.Drawing.Size(150, 20);
+            this.displayToolStripMenuItem.Text = "Display JN\'s Other Forms";
             // 
             // planeNoAndAirportSQLToolStripMenuItem
             // 
@@ -147,6 +112,13 @@
             this.displayAllMaintenanceLogsSQLToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.displayAllMaintenanceLogsSQLToolStripMenuItem.Text = "Display All Maintenance Logs SQL";
             this.displayAllMaintenanceLogsSQLToolStripMenuItem.Click += new System.EventHandler(this.displayAllMaintenanceLogsSQLToolStripMenuItem_Click);
+            // 
+            // closeAndReturnToMainFormToolStripMenuItem
+            // 
+            this.closeAndReturnToMainFormToolStripMenuItem.Name = "closeAndReturnToMainFormToolStripMenuItem";
+            this.closeAndReturnToMainFormToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
+            this.closeAndReturnToMainFormToolStripMenuItem.Text = "Close And Return to Main Form";
+            this.closeAndReturnToMainFormToolStripMenuItem.Click += new System.EventHandler(this.closeAndReturnToMainFormToolStripMenuItem_Click);
             // 
             // dataGridView1
             // 
@@ -244,13 +216,10 @@
         private System.Windows.Forms.Button SeeAllMaintLogsButton;
         private System.Windows.Forms.Button ReturnToMainButton;
         private System.Windows.Forms.Button ClearButton;
-        private System.Windows.Forms.ToolStripMenuItem planesSQLToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem planesDB2ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem maintenanceLogsSQLToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem maintenanceLogsDB2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem planeNoAndAirportSQLToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem planeNoAndAirportDB2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem displayAllMaintenanceLogsSQLToolStripMenuItem;
         private System.Windows.Forms.Button ExitButton;
+        private System.Windows.Forms.ToolStripMenuItem closeAndReturnToMainFormToolStripMenuItem;
     }
 }

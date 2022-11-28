@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IBM.Data.DB2.iSeries;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -83,65 +84,41 @@ namespace PyxisAir
             }
             catch (Exception ex)
             {
+                //Errors will display in the listbox
                 lstDisplay.Items.Add(ex.Message);
             }
         }
 
+        //Clear button
         private void ClearButton_Click(object sender, EventArgs e)
         {
             txtPlaneNo.Text = "";
             lstDisplay.Items.Clear();
         }
 
+        //Return to Main Form Button
         private void ReturnToMainButton_Click(object sender, EventArgs e)
         {
             MainForm mf = new MainForm();
             mf.Show();
-            //this.Hide();
-            this.Close();
+            this.Hide();
         }
 
+        //Exit Program button from file menu
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        //Return to Main Form from file menu
         private void closeReturnToMainFormToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MainForm mf = new MainForm();
             mf.Show();
-            //this.Hide();
-            this.Close();
-        }
-
-        private void planesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form1 f1 = new Form1();
-            f1.Show();
             this.Hide();
         }
 
-        private void planesDB2ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            PlanesDB2 planesDB = new PlanesDB2();
-            planesDB.Show();
-            this.Hide();
-        }
-
-        private void maintenanceLogsSQLToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Maintenance maint = new Maintenance();
-            maint.Show();
-            this.Hide();
-        }
-
-        private void maintenanceLogsDB2ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MaintenanceDB2 maint = new MaintenanceDB2();
-            maint.Show();
-            this.Hide();
-        }
-
+        //Open PlaneNoAndAirportDB2 form
         private void planeNoAirportDB2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             PlaneNoAndAirportDB2_JN planeNoAndAirportDB2 = new PlaneNoAndAirportDB2_JN();
@@ -149,6 +126,7 @@ namespace PyxisAir
             this.Hide();
         }
 
+        //Open AllMaintenanceLogsSQL_JN form
         private void displayAllMaintenanceLogsSQLToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AllMaintenanceLogsSQL_JN allMaintSQL = new AllMaintenanceLogsSQL_JN();
@@ -156,9 +134,26 @@ namespace PyxisAir
             this.Hide();
         }
 
+        //Exit Button
         private void ExitButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        //Return to Main Form from display menu
+        private void closeAndReturnToMainFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MainForm mf = new MainForm();
+            mf.Show();
+            this.Hide();
+        }
+
+        //Open AllMaintenanceLogsDB2_JN form
+        private void displayAllMaintenanceLogsDB2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AllMaintenanceLogsDB2_JN allMaintDB2 = new AllMaintenanceLogsDB2_JN();
+            allMaintDB2.Show();
+            this.Hide();
         }
     }
 }

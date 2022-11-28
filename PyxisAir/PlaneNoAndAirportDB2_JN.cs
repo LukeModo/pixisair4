@@ -91,7 +91,7 @@ namespace PyxisAir
         {
             MainForm mf = new MainForm();
             mf.Show();
-            this.Close();
+            this.Hide();
         }
 
         //Exit Program Button from menustrip
@@ -108,34 +108,7 @@ namespace PyxisAir
             this.Close();
         }
 
-        private void planesSQLToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form1 f1 = new Form1();
-            f1.Show();
-            this.Hide();
-        }
-
-        private void planesDB2ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            PlanesDB2 planesDB = new PlanesDB2();
-            planesDB.Show();
-            this.Hide();
-        }
-
-        private void maintenanceSQLToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Maintenance maint = new Maintenance();
-            maint.Show();
-            this.Hide();
-        }
-
-        private void maintenanceLogsDB2ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MaintenanceDB2 maint = new MaintenanceDB2();
-            maint.Show();
-            this.Hide();
-        }
-
+        //Open PlaneNoAndAirportSQL form
         private void planeNoAirportSQLToolStripMenuItem_Click(object sender, EventArgs e)
         {
             PlaneNoAndAirportSQL_JN planeNoAndAirportSQL = new PlaneNoAndAirportSQL_JN();
@@ -143,6 +116,7 @@ namespace PyxisAir
             this.Hide();
         }
 
+        //Open AllMaintenanceLogsSQL form
         private void displayAllMaintenanceLogsSQLToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AllMaintenanceLogsSQL_JN allMaintSQL = new AllMaintenanceLogsSQL_JN();
@@ -150,6 +124,7 @@ namespace PyxisAir
             this.Hide();
         }
 
+        //Exit Button
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -158,6 +133,22 @@ namespace PyxisAir
         private void txtPlaneNo_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        //Return to Main Form in display menu
+        private void closeAndReturnToMainFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MainForm mf = new MainForm();
+            mf.Show();
+            this.Close();
+        }
+
+        //Open AllMaintenanceLogsSQL form
+        private void displayAllMaintenanceLogsDB2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AllMaintenanceLogsDB2_JN allMaintDB2 = new AllMaintenanceLogsDB2_JN();
+            allMaintDB2.Show();
+            this.Hide();
         }
     }
 }

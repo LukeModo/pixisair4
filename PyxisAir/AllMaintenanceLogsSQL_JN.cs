@@ -82,15 +82,18 @@ namespace PyxisAir
             }
             catch (Exception ex)
             {
+                //Errors will display in the txtError textbox
                 txtError.Text = ex.Message;
             }
         }
 
+        //Clear textbox button
         private void ClearButton_Click(object sender, EventArgs e)
         {
             txtError.Text = "";
         }
 
+        //Return to Main Form
         private void ReturnToMainButton_Click(object sender, EventArgs e)
         {
             MainForm mf = new MainForm();
@@ -98,11 +101,13 @@ namespace PyxisAir
             this.Close();
         }
 
+        //Exit Program button in the file menu
         private void exitProgramToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        //Return to Main Form in the file menu
         private void closeReturnToMainFormToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MainForm mf = new MainForm();
@@ -110,34 +115,7 @@ namespace PyxisAir
             this.Close();
         }
 
-        private void planesSQLToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form1 f1 = new Form1();
-            f1.Show();
-            this.Hide();
-        }
-
-        private void planesDB2ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            PlanesDB2 planesDB = new PlanesDB2();
-            planesDB.Show();
-            this.Hide();
-        }
-
-        private void maintenanceLogsSQLToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Maintenance maint = new Maintenance();
-            maint.Show();
-            this.Hide();
-        }
-
-        private void maintenanceLogsDB2ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MaintenanceDB2 maint = new MaintenanceDB2();
-            maint.Show();
-            this.Hide();
-        }
-
+        //Open PlaneNoAndAirportSQL form
         private void planeNoAndAirportSQLToolStripMenuItem_Click(object sender, EventArgs e)
         {
             PlaneNoAndAirportSQL_JN planeNoAndAirportSQL = new PlaneNoAndAirportSQL_JN();
@@ -145,6 +123,7 @@ namespace PyxisAir
             this.Hide();
         }
 
+        //Open PlaneNoAndAirportDB2 form
         private void planeNoAndAirportDB2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             PlaneNoAndAirportDB2_JN planeNoAndAirportDB2 = new PlaneNoAndAirportDB2_JN();
@@ -152,6 +131,7 @@ namespace PyxisAir
             this.Hide();
         }
 
+        //Open AllMaintenanceLogsDB2 form
         private void displayAllMaintenanceLogsDB2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AllMaintenanceLogsDB2_JN allMaintDB2 = new AllMaintenanceLogsDB2_JN();
@@ -159,9 +139,18 @@ namespace PyxisAir
             this.Hide();
         }
 
+        //Exit Button
         private void ExitButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        //Return to Main form in display menu
+        private void closeAndReturnToMainFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MainForm mf = new MainForm();
+            mf.Show();
+            this.Close();
         }
     }
 }
