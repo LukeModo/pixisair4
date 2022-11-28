@@ -76,7 +76,7 @@ namespace PyxisAir
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void btnClear_Click(object sender, EventArgs e)
