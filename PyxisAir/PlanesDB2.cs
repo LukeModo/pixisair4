@@ -79,7 +79,7 @@ namespace PyxisAir
 
         private void btnExit_Click_1(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void PlanesDB2_FormClosing_1(object sender, FormClosingEventArgs e)
@@ -91,7 +91,7 @@ namespace PyxisAir
         }
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void mainFormToolStripMenuItem1_Click(object sender, EventArgs e)
